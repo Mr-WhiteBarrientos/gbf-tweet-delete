@@ -7,10 +7,10 @@ api = twitter.Api(consumer_key=config.CONSUMER_KEY,
                   access_token_secret=config.ACCESS_SECRET)
 
 screen_name = api.VerifyCredentials().screen_name
-#screen_name = 'konnpeki27'
+
 
 keyword_str = '参加者募集！'
-if config.lang == 'EN':
+if config.LANG == 'EN':
     keyword_str = 'I need backup!'
 
 # Searching for tweets of multiplayer raids with since value hardcoded since gbf happened
